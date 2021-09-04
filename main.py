@@ -229,5 +229,9 @@ print('Stop')
 try:
     age = int(input('Enter your age? '))
     print(age)
+    income = 2000000
+    random_number = income / int(age)
 except ValueError:
     print('Invalid value')
+except ZeroDivisionError:
+    print('Age cannot be zero')
