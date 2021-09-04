@@ -208,3 +208,16 @@ customers['is_new'] = True
 print(customers['name'])
 print(customers.get('name'))
 print(customers.get('gender', 'The value is blank'))
+
+#Functions in python
+def greet_user (name):
+    print(f'Hi there {name}')
+    print('Welcome aboard')
+
+print('start')
+greet_user('Paul')
+greet_user('Dilly')
+greet_user('Mary')
+print('Stop')
+
+# In python, we always define function then call them
