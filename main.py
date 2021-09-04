@@ -214,6 +214,7 @@ def greet_user (name):
     print(f'Hi there {name}')
     print('Welcome aboard')
 
+
 print('start')
 greet_user('Paul')
 greet_user('Dilly')
@@ -221,3 +222,12 @@ greet_user('Mary')
 print('Stop')
 
 # In python, we always define function then call them
+# by default, all functions return None
+# 2 blank lines after python functions
+
+#exceptions in python
+try:
+    age = int(input('Enter your age? '))
+    print(age)
+except ValueError:
+    print('Invalid value')
