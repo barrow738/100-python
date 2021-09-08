@@ -226,12 +226,78 @@ print('Stop')
 # 2 blank lines after python functions
 
 #exceptions in python
-try:
-    age = int(input('Enter your age? '))
-    print(age)
-    income = 2000000
-    random_number = income / int(age)
-except ValueError:
-    print('Invalid value')
-except ZeroDivisionError:
-    print('Age cannot be zero')
+# try:
+#     age = int(input('Enter your age? '))
+#     print(age)
+#     income = 2000000
+#     random_number = income / int(age)
+# except ValueError:
+#     print('Invalid value')
+# except ZeroDivisionError:
+#     print('Age cannot be zero')
+
+
+#Comments
+# single line we use #
+
+
+# classes in python
+class Point:
+    # constructor
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+
+        print('move')
+    def draw(self):
+
+        print("draw")
+
+# Creating and object
+
+
+point1 = Point(10, 20)
+# point1.x = 10
+# point1.y = 20
+print(point1.x)
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f'Hi, I am {self.name}')
+
+
+person1 = Person('Paul')
+# print(person1.name)
+person1.talk()
+
+# Inheritance in python
+class Mammal:
+    def __init__(self, name):
+        self.name = name
+
+    def walk(self):
+        print('Walking')
+
+# Inheritance
+
+
+class Dog(Mammal):
+    def bark(self):
+        print('Bark')
+
+
+class Cat(Mammal):
+    pass #Python does not like empty classes
+
+
+dog1 = Dog('Liam')
+dog1.walk()
+
+
+# Modules in python
